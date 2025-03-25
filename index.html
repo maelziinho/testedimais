@@ -7,23 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="imagens/logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/logopng.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header" id="header">
-        <img src="imagens/logodimais.png" alt="Dimais Doces">
+    <!-- Tela de Login -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <h2>Bem-vindo à Dimais Doces!</h2>
+            <p>Por favor, insira seu nome e o código do vendedor.</p>
+            <input type="text" id="clientName" placeholder="Seu nome" required>
+            <input type="text" id="sellerCode" placeholder="Código do vendedor (ex: 001)" required>
+            <button onclick="validateLogin()">OK</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="header" id="header" style="display: none;">
+        <img src="images/logodimais.png" alt="Dimais Doces">
         <p class="header-slogan">"Sabores que encantam, doces que conquistam!"</p>
         <button class="catalog-button" onclick="showCatalog()">Visualizar Catálogo</button>
         <div class="informacoes" id="informacoes">
-            <p><i class="fas fa-clock clock-icon"></i> Horário de Funcionamento: 07:00 ás 17:00</p>
+            <p><i class="fas fa-clock clock-icon"></i> Horário de Funcionamento: 07:00 às 17:00 (Segunda a Sexta)</p>
+            <div class="status-container">
+                <div class="status-content">
+                    <span class="status-indicator"></span>
+                    <span class="status-text"></span>
+                </div>
+            </div>
         </div>
     </div>
-    
+
+    <!-- Rodapé de Créditos -->
     <footer class="credit-footer">
         <p class="credit-text">&copy; 2025 | Desenvolvido por Ismael Rocha</p>
     </footer>
 
+    <!-- Catálogo de Produtos -->
     <div class="catalogo" id="catalogo" style="display: none;">
+        <div class="welcome-message" id="welcomeMessage"></div>
         <h1>Dimais Doces</h1>
         <div class="grid" id="produtos"></div>
         <div class="pagination">
@@ -32,24 +53,21 @@
         </div>
     </div>
 
-    <div class="cart-icon" id="cartIcon" onclick="toggleCart()" style="display: none;">
+    <!-- Ícone do Carrinho -->
+    <div class="cart-icon" id="cartIcon" onclick="toggleCart(event)" style="display: none;">
         <i class="fas fa-shopping-cart"></i><span id="cartCount">0</span>
     </div>
-    <div class="cart-details" id="cartDetails">
+
+    <!-- Detalhes do Carrinho -->
+    <div class="cart-details" id="cartDetails" style="display: none;" onclick="event.stopPropagation()">
         <h3>Carrinho</h3>
         <div id="cartItems"></div>
         <div id="cartTotal"></div>
         <textarea id="orderNotes" placeholder="Adicione observações ao pedido aqui..."></textarea>
-
-        <div class="customer-name" id="customerName">
-            <p>Informe seu nome:</p>
-            <input type="text" id="nameInput" placeholder="Seu nome">
-            <button id="confirmNameButton" onclick="confirmName()">OK</button>
-        </div>
-
-        <button id="finalizeOrderButton" onclick="finalizeOrder()" style="margin-top: 20px; display: none;">Finalizar e Enviar Pedido</button>
+        <button id="finalizeOrderButton" onclick="finalizeOrder()" style="margin-top: 20px;">Finalizar Pedido</button>
     </div>
 
+    <!-- Rodapé Principal -->
     <footer class="footer" id="mainFooter" style="display: none;">
         <div class="social-media">
             <p>Siga-nos:</p>
@@ -61,6 +79,15 @@
             </a>
         </div>
     </footer>
+
+    <!-- Tela de Agradecimento -->
+    <div class="thank-you-screen" id="thankYouScreen" style="display: none;">
+        <div class="thank-you-box">
+            <h2>Obrigado por comprar na Dimais Doces!</h2>
+            <p>Agora é só clicar e garantir suas delícias!</p>
+            <button onclick="sendToWhatsApp()">Enviar Pedido por WhatsApp</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

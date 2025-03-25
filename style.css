@@ -5,8 +5,61 @@ body {
     background: #fff;
 }
 
+/* Tela de Login */
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.login-box input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-box button {
+    background: #cd1a1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background: #000000;
+}
+
+/* Header */
 .header {
-    background-color: red;
+    background-color: #cd1a1f;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -20,13 +73,77 @@ body {
 .header img {
     max-width: 20%;
     height: auto;
+    border-radius: 0;
+    width: auto;
+    max-height: none;
 }
 
 .header .header-slogan {
     color: white;
-    font-size: 1.8em;
-    font-family: 'Alex Brush', cursive;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
     margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Status em formato de botão */
+.status-container {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    backdrop-filter: blur(5px); /* Efeito de vidro suave */
+}
+
+.status-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-indicator.aberto {
+    background-color: #4CAF50; /* Verde mais vivo */
+    box-shadow: 0 0 8px #4CAF50; /* Glow sutil */
+}
+
+.status-indicator.fechado {
+    background-color: #FF5252; /* Vermelho mais vibrante */
+    box-shadow: 0 0 8px #FF5252;
+}
+
+.status-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Para dias de semana */
+.status-text.aberto::after {
+    content: "● Aberto Agora";
+}
+.status-text.fechado::after {
+    content: "● Fechado";
+}
+
+/* Para finais de semana */
+.status-text.fim-de-semana::after {
+    content: "● Fechado (Final de Semana)";
+}
+
+.informacoes {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
 }
 
 .credit-footer {
@@ -41,22 +158,17 @@ body {
 }
 
 .credit-text {
-    font-size: 12px;
-    color: #f0e7e7;
-}
-
-.informacoes {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    color: #e7edf0;
+    font-size: 13px;
+    color: white;
 }
 
 button {
-    background: red;
+    background: #cd1a1f;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 8px
 }
 
 button:hover {
@@ -69,10 +181,11 @@ button:focus {
 
 .catalog-button {
     background: #06864b;
+    border-radius: 8px
 }
 
 .catalog-button:hover {
-    background: rgb(78, 13, 13);
+    background: #000000;
 }
 
 .catalogo {
@@ -120,7 +233,7 @@ button:focus {
     right: 20px;
     cursor: pointer;
     font-size: 24px;
-    color: rgb(68, 42, 42);
+    color: rgb(34, 31, 31);
     z-index: 1001;
 }
 
@@ -129,7 +242,7 @@ button:focus {
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: red;
+    background-color: #cd1a1f;
     color: white;
     padding: 2px 6px;
     border-radius: 50%;
@@ -162,33 +275,11 @@ textarea#orderNotes {
     resize: none;
 }
 
-.delivery-option, .location-option, .payment-option, .customer-name {
-    margin-top: 10px;
-}
-
-.delivery-option p, .location-option p, .payment-option p, .customer-name p {
-    margin: 0;
-    font-weight: bold;
-}
-
-.delivery-option label, .payment-option label {
-    margin-right: 10px;
-}
-
-#locationOption select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
 #finalMessage {
     margin-top: 20px;
     padding: 10px;
     background: #f0f0f0;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
     text-align: center;
 }
@@ -196,34 +287,39 @@ textarea#orderNotes {
 #finalMessage p {
     margin: 10px 0;
     font-size: 16px;
-    color: #333;
+    color: white;
 }
 
 .cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 .cart-item p {
     flex: 1;
+    margin: 0;
+    font-size: 14px;
 }
 
 .adjust-buttons {
     display: flex;
     align-items: center;
+    margin: 0 10px;
 }
 
 .adjust-buttons span {
-    color: red;
+    color: #cd1a1f;
     margin: 0 5px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .remove-item {
-    color: red;
+    color: #cd1a1f;
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
@@ -231,7 +327,7 @@ textarea#orderNotes {
 }
 
 .wholesale-message {
-    color: red;
+    color: #cd1a1f;
     margin-top: 10px;
 }
 
@@ -284,19 +380,11 @@ textarea#orderNotes {
 }
 
 .clock-icon {
-    color: #32da5c;
+    color: #b7c032;
 }
 
 .clock-icon:hover {
-    color: #FFA500;
-}
-
-.motorcycle-icon {
-    color: #FF4500;
-}
-
-.motorcycle-icon:hover {
-    color: #c4331a;
+    color: #000000;
 }
 
 .pagination {
@@ -305,7 +393,7 @@ textarea#orderNotes {
 }
 
 .pagination button {
-    background: red;
+    background: #cd1a1f;
     color: white;
     border: none;
     padding: 10px;
@@ -317,12 +405,62 @@ textarea#orderNotes {
     background: #000000;
 }
 
+.welcome-message {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.thank-you-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+}
+
+.thank-you-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.thank-you-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.thank-you-box button {
+    background: #cd1a1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you-box button:hover {
+    background: #cd1a1f;
+}
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .cart-icon {
         font-size: 28px;
+    }
+    .header .header-slogan {
+        font-size: 1.1em;
     }
 }
 
@@ -334,7 +472,7 @@ textarea#orderNotes {
         padding: 30px 10px;
     }
     .header .header-slogan {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .catalog-button {
         padding: 10px 15px;
@@ -353,37 +491,9 @@ textarea#orderNotes {
     .footer .social-media i {
         font-size: 24px;
     }
-}
-
-.customer-name {
-    margin-top: 10px;
-}
-
-.customer-name p {
-    margin: 0;
-    font-weight: bold;
-}
-
-.customer-name input {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.customer-name button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    width: px;
-    height: 35px;
-}
-
-.customer-name button:hover {
-    background-color: #000000;
+    .status-button {
+        padding: 8px 20px;
+        font-size: 1em;
+        width: 90%;
+    }
 }

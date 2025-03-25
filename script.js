@@ -5,192 +5,305 @@ const produtos = [
     {
         id: 1,
         nome: "AB Padrão 1,020kg",
-        preco: 8.00,
-        precoAtacado: 6.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Doce em massa de batata doce!",
-        imagem: "imagens/abpadrao.png"
+        preco: 16.95,
+        precoAtacado: 14.70,
+        minAtacado: 6,
+        imagem: "images/abpadrao.png"
     },
     {
         id: 2,
-        nome: "AB Batata Sabor Milho 1,100kg",
-        preco: 9.00,
-        precoAtacado: 7.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Doce de batata doce sabor milho!",
-        imagem: "imagens/abmilho.png"
+        nome: "Amendoleite 1,300kg",
+        preco: 22.95,
+        precoAtacado: 19.15,
+        minAtacado: 6,
+        imagem: "images/amendoleite.png"
     },
     {
         id: 3,
-        nome: "AB Coco 1,200kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Doce em massa de batata doce com coco!",
-        imagem: "imagens/abcoco.png"
+        nome: "AB Batata Sabor Milho 1,100kg",
+        preco: 16.95,
+        precoAtacado: 14.70,
+        minAtacado: 6,
+        imagem: "images/abmilho.png"
     },
     {
         id: 4,
-        nome: "Amendoim Doce 800g",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Experimente a combinação perfeita de sabor e crocância!",
-        imagem: "imagens/amendoimdoce.png"
+        nome: "AB Coco 1,200kg",
+        preco: 20.50,
+        precoAtacado: 18.70,
+        minAtacado: 6,
+        imagem: "images/abcoco.png"
     },
     {
         id: 5,
-        nome: "Cocada 1,100kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Doce, suave e cheia de prazer em cada mordida!",
-        imagem: "imagens/cocada.png"
+        nome: "Amendoim Doce 800g",
+        preco: 21.95,
+        precoAtacado: 19.80,
+        minAtacado: 6,
+        imagem: "images/amendoimdoce.png"
     },
     {
         id: 6,
-        nome: "Doce de Banana 1,200kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "perfeito para quem aprecia o sabor autêntico e caseiro!",
-        imagem: "imagens/docedebanana.png"
+        nome: "Cocada 1,100kg",
+        preco: 25.50,
+        precoAtacado: 23.50,
+        minAtacado: 6,
+        imagem: "images/cocada.png"
     },
     {
         id: 7,
-        nome: "Geleia de Frutas 1,200kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Toque caseiro e cheio de sabor natural!",
-        imagem: "imagens/geleiadefrutas.png"
+        nome: "Doce de Banana 1,200kg",
+        preco: 15.50,
+        precoAtacado: 13.20,
+        minAtacado: 6,
+        imagem: "images/docedebanana.png"
     },
     {
         id: 8,
-        nome: "Doce de Leite Puro 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "A verdadeira delícia do campo!",
-        imagem: "imagens/docedeleite.png"
+        nome: "Geleia de Frutas 1,200kg",
+        preco: 15.50,
+        precoAtacado: 13.20,
+        minAtacado: 6,
+        imagem: "images/geleiadefrutas.png"
     },
     {
         id: 9,
-        nome: "Doce de Leite C/Chocolate 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "A combinação irresistível de cremosidade e intensidade!",
-        imagem: "imagens/docedeleitecomchocolate.png"
+        nome: "Doce de Leite Puro 1,020kg",
+        preco: 25.95,
+        precoAtacado: 24.80,
+        minAtacado: 6,
+        imagem: "images/docedeleite.png"
     },
     {
         id: 10,
-        nome: "Mocotó 800g",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Um pedacinho de história em cada pedaço!",
-        imagem: "imagens/mocoto.png"
+        nome: "Doce de Leite C/Chocolate 1,020kg",
+        preco: 25.95,
+        precoAtacado: 24.80,
+        minAtacado: 6,
+        imagem: "images/docedeleitecomchocolate.png"
     },
     {
         id: 11,
-        nome: "Paçoca 1,040kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "O sabor da infâcia em cada pedacinho!",
-        imagem: "imagens/pacoca.png"
+        nome: "Mocotó 800g",
+        preco: 15.50,
+        precoAtacado: 13.20,
+        minAtacado: 6,
+        imagem: "images/mocoto.png"
     },
     {
         id: 12,
-        nome: "Molecão 1,040kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "O doce que derrete na boca!",
-        imagem: "imagens/molecao.png"
+        nome: "Paçoca 1,040kg",
+        preco: 18.30,
+        precoAtacado: 15.40,
+        minAtacado: 6,
+        imagem: "images/pacoca.png"
     },
     {
         id: 13,
-        nome: "Pé de Moça 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "A combinação irresistível de sabores!",
-        imagem: "imagens/pedemoca.png"
+        nome: "Molecão 1,040kg",
+        preco: 18.30,
+        precoAtacado: 15.40,
+        minAtacado: 6,
+        imagem: "images/molecao.png"
     },
     {
         id: 14,
-        nome: "Pé de Moleque 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Sabor autêntico e crocante!!",
-        imagem: "imagens/pedemoleque.png"
+        nome: "Pé de Moça 1,020kg",
+        preco: 18.50,
+        precoAtacado: 16.30,
+        minAtacado: 6,
+        imagem: "images/pedemoca.png"
     },
     {
         id: 15,
-        nome: "Quebra Queixo 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Doce e refrescante, vai te conquistar em cada mordida!",
-        imagem: "imagens/quebraqueixo.png"
+        nome: "Pé de Moleque 1,020kg",
+        preco: 18.30,
+        precoAtacado: 15.40,
+        minAtacado: 6,
+        imagem: "images/pedemoleque.png"
     },
     {
         id: 16,
-        nome: "Rolhão 1,020kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Uma verdadeira explosão de sabor!",
-        imagem: "imagens/rolhao.png"
+        nome: "Pingo de Leite 1,020kg",
+        preco: 25.95,
+        precoAtacado: 21.50,
+        minAtacado: 6,
+        imagem: "images/pingodeleite.png"
     },
     {
         id: 17,
-        nome: "Torrone 960g",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "A combinação irresistível de cremosidade e intensidade!",
-        imagem: "imagens/torrone.png"
+        nome: "Quebra Queixo 1,020kg",
+        preco: 23.50,
+        precoAtacado: 22.00,
+        minAtacado: 6,
+        imagem: "images/quebraqueixo.png"
     },
     {
         id: 18,
-        nome: "Queijadinha 700g",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Sabor irresistível e cheirinhode casa!",
-        imagem: "imagens/queijadinha.png"
+        nome: "Rolhão 1,020kg",
+        preco: 17.10,
+        precoAtacado: 14.10,
+        minAtacado: 6,
+        descricao: "Uma verdadeira explosão de sabor!",
+        imagem: "images/rolhao.png"
     },
     {
         id: 19,
-        nome: "Trufas Sortidas 320g",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 12, // Quantidade mínima para atacado
-        descricao: "Um presente ou uma sobremesa perfeita para qualquer ocasião!",
-        imagem: "imagens/trufas.png"
+        nome: "Torrone 960g",
+        preco: 15.50,
+        precoAtacado: 13.20,
+        minAtacado: 6,
+        imagem: "images/torrone.png"
     },
-     {
+    {
         id: 20,
-        nome: "Geleia D'água 1,8kg",
-        preco: 12.00,
-        precoAtacado: 10.00,
-        minAtacado: 6, // Quantidade mínima para atacado
-        descricao: "Delicada e refrescante!",
-        imagem: "imagens/geleiadagua.png"
+        nome: "Queijadinha 700g",
+        preco: 19.30,
+        precoAtacado: 17.80,
+        minAtacado: 6,
+        imagem: "images/queijadinha.png"
     },
+    {
+        id: 21,
+        nome: "Trufas Sortidas 320g",
+        preco: 13.95,
+        precoAtacado: 12.10,
+        minAtacado: 12,
+        imagem: "images/trufas.png"
+    },
+    {
+        id: 22,
+        nome: "Geleia D'água 1,8kg",
+        preco: 14.50,
+        precoAtacado: 13.75,
+        minAtacado: 6,
+        imagem: "images/geleiadagua.png"
+    }
 ];
+
+function nextPage() {
+    const totalPages = Math.ceil(produtos.length / productsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+        window.scrollTo(0, 0);
+    }
+}
+
+function previousPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+        window.scrollTo(0, 0);
+    }
+}
+
+function validateLogin() {
+    const clientName = document.getElementById('clientName').value.trim();
+    const sellerCode = document.getElementById('sellerCode').value.trim();
+
+    if (!clientName || !sellerCode) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    if (!/^\d{3}$/.test(sellerCode)) {
+        alert('Código do vendedor inválido. Deve ser no formato 001, 002, etc.');
+        return;
+    }
+
+    const sellerName = getSellerName(sellerCode);
+    const confirmMessage = `Você escolheu o vendedor ${sellerName}. Deseja continuar o pedido com ele?`;
+    
+    if (confirm(confirmMessage)) {
+        localStorage.setItem('clientName', clientName);
+        localStorage.setItem('sellerCode', sellerCode);
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('header').style.display = 'block';
+        document.getElementById('mainFooter').style.display = 'none';
+        checkStatus();
+    } else {
+        document.getElementById('clientName').value = '';
+        document.getElementById('sellerCode').value = '';
+    }
+}
+
+function getSellerName(sellerCode) {
+    const sellers = {
+        '001': 'Adalbeto',
+        '002': 'Adriana',
+        '003': 'Celso',
+        '004': 'Danilo',
+        '005': 'Danilo',
+        '006': 'Felipe',
+        '007': 'Figueiredo',
+        '008': 'Geisa',
+        '009': 'Ivo',
+        '010': 'Márcio',
+        '011': 'Marcos',
+        '012': 'Olvécio',
+        '013': 'Renato',
+        '014': 'Ricardo',
+        '015': 'Robson',
+        '016': 'Rosalvo',
+        '017': 'Sueli',
+        '018': 'Thiago',
+        '019': 'Wender',
+        '020': 'Wanderlan',
+    };
+    return sellers[sellerCode] || 'Vendedor Desconhecido';
+}
+
+function checkStatus() {
+    const now = new Date();
+    const hour = now.getHours();
+    const dayOfWeek = now.getDay();
+    const statusIndicator = document.querySelector('.status-indicator');
+    const statusText = document.querySelector('.status-text');
+
+    statusIndicator.className = 'status-indicator';
+    statusText.className = 'status-text';
+
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+        if (hour >= 7 && hour < 17) {
+            statusIndicator.classList.add('aberto');
+            statusText.classList.add('aberto');
+        } else {
+            statusIndicator.classList.add('fechado');
+            statusText.classList.add('fechado');
+        }
+    } else {
+        statusIndicator.classList.add('fechado');
+        statusText.classList.add('fim-de-semana');
+    }
+}
+
+function showWelcomeMessage() {
+    const clientName = localStorage.getItem('clientName');
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour >= 5 && hour < 12) {
+        greeting = 'Bom dia';
+    } else if (hour >= 12 && hour < 18) {
+        greeting = 'Boa tarde';
+    } else {
+        greeting = 'Boa noite';
+    }
+
+    const welcomeMessage = document.getElementById('welcomeMessage');
+    welcomeMessage.innerHTML = `Olá, ${clientName}! ${greeting}.<br>Vendedor: ${getSellerName(localStorage.getItem('sellerCode'))}!`;
+}
 
 function showCatalog() {
     document.getElementById("header").style.display = "none";
-    document.getElementById("mainFooter").style.display = "block"; // Mostrar o rodapé padrão
-    document.body.style.overflow = "auto"; // Permitir rolagem após visualizar o catálogo
+    document.getElementById("mainFooter").style.display = "block";
+    document.body.style.overflow = "auto";
     document.getElementById("catalogo").style.display = "block";
     document.getElementById("cartIcon").style.display = "block";
-    renderPage(currentPage); // Exibe produtos da página atual
+    showWelcomeMessage();
+    renderPage(currentPage);
 }
 
 function renderPage(page) {
@@ -216,37 +329,50 @@ function renderPage(page) {
         productPrice.innerHTML = `Varejo: R$ ${produto.preco.toFixed(2)} <br> Atacado: R$ ${produto.precoAtacado.toFixed(2)}`;
         productDiv.appendChild(productPrice);
 
-        const productDescription = document.createElement('p');
-        productDescription.textContent = produto.descricao;
-        productDiv.appendChild(productDescription);
-
         const addToCartButton = document.createElement('button');
-        addToCartButton.textContent = `Adicionar ao Carrinho (${produto.quantity || 0})`;
-        addToCartButton.onclick = () => addToCart(produto);
+        const cartItem = cart.find(item => item.id === produto.id);
+        const currentQuantity = cartItem ? cartItem.quantity : 0;
+        addToCartButton.textContent = `Adicionar ao Carrinho (${currentQuantity})`;
+        addToCartButton.onclick = (e) => {
+            e.stopPropagation();
+            addToCart(produto);
+        };
         productDiv.appendChild(addToCartButton);
 
-        // Adicionar a mensagem de atacado
         const wholesaleMessage = document.createElement('p');
         wholesaleMessage.classList.add('wholesale-message');
-        const quantidadeRestante = produto.minAtacado - (produto.quantity || 0);
-        wholesaleMessage.textContent = quantidadeRestante > 0 ? `Quantidade mínima para preço de atacado: ${produto.minAtacado} unidades` : '';
+        
+        if (currentQuantity === 0) {
+            wholesaleMessage.textContent = `Quantidade mínima para atacado: ${produto.minAtacado} unidades`;
+        } else {
+            const quantidadeRestante = produto.minAtacado - currentQuantity;
+            wholesaleMessage.textContent = quantidadeRestante > 0 
+                ? `Adicione mais ${quantidadeRestante} para garantir o preço de atacado.` 
+                : 'Você atingiu o preço de atacado!';
+        }
         productDiv.appendChild(wholesaleMessage);
 
         container.appendChild(productDiv);
     });
 }
 
+function toggleCart(event) {
+    if (event) {
+        event.stopPropagation(); // Impede a propagação do evento
+    }
+    const cartDetails = document.getElementById('cartDetails');
+    cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
+}
 function addToCart(produto) {
     const existingItem = cart.find(item => item.id === produto.id);
 
     if (existingItem) {
-        existingItem.quantity += 1; // Atualiza a quantidade se já existir
+        existingItem.quantity += 1;
     } else {
-        produto.quantity = 1; // Inicializa a quantidade do produto
-        cart.push(produto); // Adiciona novo produto ao carrinho
+        const newItem = {...produto, quantity: 1};
+        cart.push(newItem);
     }
 
-    // Atualiza quantidade no botão e a mensagem
     updateProductQuantity(produto.id);
     updateCart();
 }
@@ -257,15 +383,21 @@ function updateProductQuantity(productId) {
         const addToCartButton = productDiv.querySelector('button');
         const productName = productDiv.querySelector('h3').textContent;
         const product = produtos.find(p => p.nome === productName);
+        
         if (product && product.id === productId) {
-            addToCartButton.textContent = `Adicionar ao Carrinho (${cart.find(item => item.id === productId)?.quantity || 0})`;
+            const cartItem = cart.find(item => item.id === productId);
+            const currentQuantity = cartItem ? cartItem.quantity : 0;
+            addToCartButton.textContent = `Adicionar ao Carrinho (${currentQuantity})`;
 
-            // Atualiza a mensagem de atacado
             const wholesaleMessage = productDiv.querySelector('.wholesale-message');
-            const quantidadeRestante = product.minAtacado - (cart.find(item => item.id === productId)?.quantity || 0);
-            wholesaleMessage.textContent = quantidadeRestante > 0 
-                ? `Adicione mais ${quantidadeRestante} para garantir preço de atacado.` 
-                : 'Você atingiu o preço de atacado!';
+            if (currentQuantity === 0) {
+                wholesaleMessage.textContent = `Quantidade mínima para atacado: ${product.minAtacado} unidades`;
+            } else {
+                const quantidadeRestante = product.minAtacado - currentQuantity;
+                wholesaleMessage.textContent = quantidadeRestante > 0 
+                    ? `Adicione mais ${quantidadeRestante} para garantir o preço de atacado.` 
+                    : 'Você atingiu o preço de atacado!';
+            }
         }
     });
 }
@@ -274,58 +406,77 @@ function updateCart() {
     const cartItemsContainer = document.getElementById('cartItems');
     const cartTotalContainer = document.getElementById('cartTotal');
     const cartCount = document.getElementById('cartCount');
-    cartItemsContainer.innerHTML = '';  // Limpa os itens do carrinho
+    cartItemsContainer.innerHTML = '';
     let total = 0;
 
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>😢 Seu carrinho está vazio!<br>Aproveite nossas ofertas, adicione produtos no carrinho.</p>';
+        cartTotalContainer.textContent = '';
+        cartCount.textContent = '0';
+        document.getElementById('finalizeOrderButton').style.display = 'none';
+        return;
+    } else {
+        document.getElementById('finalizeOrderButton').style.display = 'block';
+    }
+
     cart.forEach(item => {
-        const price = item.quantity >= item.minAtacado ? item.precoAtacado : item.preco; // Define o preço com base na quantidade mínima do produto
+        const price = item.quantity >= item.minAtacado ? item.precoAtacado : item.preco;
         const cartItemDiv = document.createElement('div');
         cartItemDiv.classList.add('cart-item');
 
         const itemName = document.createElement('p');
         itemName.textContent = `${item.nome} - R$ ${(price * item.quantity).toFixed(2)} (${item.quantity}x)`;
-        total += price * item.quantity; // Adiciona ao total
-
+        total += price * item.quantity;
         cartItemDiv.appendChild(itemName);
 
-        // Seletor de quantidade
         const adjustButtons = document.createElement('div');
         adjustButtons.classList.add('adjust-buttons');
 
         const decreaseButton = document.createElement('span');
         decreaseButton.textContent = '-';
-        decreaseButton.onclick = () => updateItemQuantity(item, item.quantity - 1);
+        decreaseButton.onclick = (e) => {
+            e.stopPropagation();
+            updateItemQuantity(item, item.quantity - 1);
+        };
         adjustButtons.appendChild(decreaseButton);
 
         const quantityDisplay = document.createElement('span');
         quantityDisplay.textContent = item.quantity;
+        quantityDisplay.style.color = '#cd1a1f';
+        quantityDisplay.style.fontSize = '18px';
         adjustButtons.appendChild(quantityDisplay);
 
         const increaseButton = document.createElement('span');
         increaseButton.textContent = '+';
-        increaseButton.onclick = () => updateItemQuantity(item, item.quantity + 1);
+        increaseButton.onclick = (e) => {
+            e.stopPropagation();
+            updateItemQuantity(item, item.quantity + 1);
+        };
         adjustButtons.appendChild(increaseButton);
         cartItemDiv.appendChild(adjustButtons);
 
         const removeButton = document.createElement('span');
-        removeButton.textContent = '🗑️'; // Ícone de lixeira
+        removeButton.textContent = '🗑️';
         removeButton.classList.add('remove-item');
-        removeButton.onclick = () => removeFromCart(item);
+        removeButton.onclick = (e) => {
+            e.stopPropagation();
+            removeFromCart(item);
+        };
         cartItemDiv.appendChild(removeButton);
 
         cartItemsContainer.appendChild(cartItemDiv);
     });
 
     cartTotalContainer.textContent = `Total: R$ ${total.toFixed(2)}`;
-    cartCount.textContent = cart.length; // Atualiza a quantidade de produtos no carrinho
+    cartCount.textContent = cart.length;
 }
 
 function updateItemQuantity(item, newQuantity) {
     if (newQuantity <= 0) {
-        removeFromCart(item); // Remove o item se a nova quantidade for 0 ou menor
+        removeFromCart(item);
     } else {
-        item.quantity = newQuantity; // Atualiza a quantidade
-        updateCart(); // Atualiza o carrinho
+        item.quantity = newQuantity;
+        updateCart();
     }
 }
 
@@ -337,61 +488,49 @@ function removeFromCart(item) {
     }
 }
 
-function toggleCart() {
-    const cartDetails = document.getElementById('cartDetails');
-    cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
-}
-
-function nextPage() {
-    if (currentPage * productsPerPage < produtos.length) {
-        currentPage++;
-        renderPage(currentPage);
-    }
-}
-
-function previousPage() {
-    if (currentPage > 1) {
-        currentPage--;
-        renderPage(currentPage);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    renderPage(currentPage);
-});
-
-function confirmName() {
-    const nameInput = document.getElementById('nameInput').value;
-    if (nameInput.trim() !== '') {
-        document.getElementById('finalizeOrderButton').style.display = 'block';
-    } else {
-        alert('Por favor, insira seu nome.');
-    }
-}
-
 function finalizeOrder() {
-    console.log("Finalizar Pedido Clicado"); // Log para depuração
-    const customerName = document.getElementById('nameInput').value.trim();
-    console.log("Customer Name:", customerName); // Log para depuração
     if (cart.length === 0) {
         alert("Por favor, adicione pelo menos um produto ao carrinho.");
         return;
     }
-    if (customerName === "") {
-        alert("Por favor, insira seu nome.");
-        return;
-    }
 
-    sendOrder();
-    cart = [];
-    updateCart();
+    document.getElementById('cartDetails').style.display = 'none';
+    document.getElementById('mainFooter').style.display = 'none';
+    document.getElementById('thankYouScreen').style.display = 'flex';
 }
 
-function sendOrder() {
-    const customerName = document.getElementById('nameInput').value.trim();
+function sendToWhatsApp() {
+    const sellerCode = localStorage.getItem('sellerCode');
+    const phoneNumbers = {
+        '001': '5511980972402',
+        '002': '5511987016212',
+        '003': '5511968992973',
+        '004': '5511913489507',
+        '005': '5511995970048',
+        '006': '5511982809458',
+        '007': '5511945108975',
+        '008': '5511961797816',
+        '009': '5511982636261',
+        '010': '5511990083245',
+        '011': '5511947822789',
+        '012': '5511948443788',
+        '013': '5511913230024',
+        '014': '5511947702901',
+        '015': '5511986468690',
+        '016': '5511996709937',
+        '017': '5511994599488',
+        '018': '5511954280538',
+        '019': '5511989719842',
+        '020': '5511991580363',
+    };
+
+    const phoneNumber = phoneNumbers[sellerCode] || '5511999999999';
+    const customerName = localStorage.getItem('clientName');
+    const sellerName = getSellerName(sellerCode);
+
     let orderDetails = cart.map(item => {
         const price = item.quantity >= item.minAtacado ? item.precoAtacado : item.preco;
-        return `**${item.nome}** - R$ ${(price * item.quantity).toFixed(2)} (${item.quantity}x)`;
+        return `*${item.nome}* - R$ ${(price * item.quantity).toFixed(2)} (${item.quantity}x)`;
     }).join('\n');
 
     let totalAmount = cart.reduce((sum, item) => {
@@ -401,15 +540,45 @@ function sendOrder() {
 
     const orderNotes = document.getElementById('orderNotes').value;
 
-    let phoneNumber = '5511981049922'; // Número de telefone para o WhatsApp
-    let message = `Olá, meu nome é ${customerName}, estou enviando o meu pedido:\n\n${orderDetails}\n\nTotal: R$ ${totalAmount}`;
+    let message = `Olá, ${sellerName}. Meu nome é ${customerName}, estou enviando o meu pedido:\n\n${orderDetails}\n\nTotal: R$ ${totalAmount}`;
     if (orderNotes) {
         message += `\n\nObservações: ${orderNotes}`;
     }
-    message += `\n\nObrigado(a)!`;
-
-    console.log("WhatsApp Link:", `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`); // Log para depuração
+    message += `\n\nObrigado(a)! Aguardo a confirmação.`;
 
     let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
+    resetApp();
 }
+
+function resetApp() {
+    cart = [];
+    localStorage.removeItem('clientName');
+    localStorage.removeItem('sellerCode');
+    document.getElementById('thankYouScreen').style.display = 'none';
+    document.getElementById('loginScreen').style.display = 'flex';
+    document.getElementById('header').style.display = 'none';
+    document.getElementById('catalogo').style.display = 'none';
+    document.getElementById('cartIcon').style.display = 'none';
+    document.getElementById('cartDetails').style.display = 'none';
+    document.getElementById('mainFooter').style.display = 'none';
+    document.getElementById('clientName').value = '';
+    document.getElementById('sellerCode').value = '';
+    document.getElementById('orderNotes').value = '';
+    updateCart();
+}
+
+document.addEventListener('click', function(event) {
+    const cartDetails = document.getElementById('cartDetails');
+    const cartIcon = document.getElementById('cartIcon');
+    
+    // Fecha o carrinho apenas se:
+    // 1. O carrinho está aberto
+    // 2. O clique NÃO foi no ícone do carrinho
+    // 3. O clique NÃO foi dentro do carrinho
+    if (cartDetails.style.display === 'block' && 
+        !event.target.closest('#cartDetails') && 
+        !event.target.closest('#cartIcon')) {
+        cartDetails.style.display = 'none';
+    }
+});;
